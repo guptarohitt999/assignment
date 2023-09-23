@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'style2.css' %}">
+    <title>SignUp Page</title>  
+
+</head>
+<body>
+    <div class="background">
+    <div class="shape"></div>
+    <div class="shape"></div>
+    </div>
+    <form action="" method="post">
+        {% csrf_token %} 
+        {% if message %}
+           <h5 style="color: red;" > {{message}}</h5>
+        {% endif %}
+        <h3>Signup Here</h3>
+
+        <label for="username">Username:</label>
+        <input type="text" placeholder="Username" name="username" id="username" required>
+
+        <label for="email">Email:</label>
+        <input type="email" placeholder="Email" name="email" id="email" required>
+
+        <label for="password1">Password:</label>
+        <input type="password" placeholder="Password" id="password1" name="password1" required>
+        <label for="password2">Confirm Password:</label>
+        <input type="password" placeholder="Confirm Password" id="password2" name="password2" required>
+        <button type="submit">Signup</button>
+        
+        <a href="{% url 'login' %}" >i have already account</a>
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,148 @@
+*{
+    margin:0;
+    padding: 0;
+  }
+  body{
+    background-color: #7f72e1;;
+  }
+  
+  .container{
+    height: 500px;
+    width: 400px;
+    background-color: white;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    padding: 40px 35px;
+  }
+  .para1{
+    text-align: center;
+    font-size: larger;
+  }
+  h2{
+    text-align: center;
+    font-size: 35px;
+   
+  }
+  
+  .upload{
+      width: 100px;
+      position: relative;
+      margin: auto;
+      margin-top: 40px;
+    }
+    
+    .upload img{
+      border-radius: 50%;
+      border: 6px solid #eaeaea;
+    }
+    
+    .upload .round{
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      background: #00B4FF;
+      width: 32px;
+      height: 32px;
+      line-height: 33px;
+      text-align: center;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+    
+    .upload .round input[type = "file"]{
+      position: absolute;
+      transform: scale(2);
+      opacity: 0;
+    }
+    
+    input[type=file]::-webkit-file-upload-button{
+        cursor: pointer;
+    }
+    .btn-warning{
+      position: relative;
+      width: 180px;
+      left: 65px;
+      padding: 15px 10px;
+      font-size: 15px;
+      line-height: 1.5;
+      border-radius: 3px;
+      color: #fff;
+      background-color: #ffc100;
+      border:0px;
+      transition: 0.2s;
+      overflow: hidden; 
+    }
+    
+    .btn-warning input[type = "file"]{
+      cursor: pointer;
+      position: absolute;
+      left: 0%;
+      top: 0%;
+      transform: scale(3);
+      opacity: 0;
+    }
+    
+    .btn-warning:hover{
+      background-color: #d9a400;
+    }
+    .inst{
+      position: relative;
+      top:70px;
+      font-size: larger;
+  
+    }
+  
+    .lower{
+      position: relative;
+      top: 50px;
+    }
+    .submit{
+      margin: 14px 0px;
+      margin-top: 40px;
+      width: 100%;
+      background-color: #5b4afc;
+      color: white;
+      padding: 10px 0px;
+      font-size: 18px;
+      font-weight: 600;
+      border-radius: 5px;
+      cursor: pointer;
+      border: 2px solid black;
+  }
+  .submit:hover{
+    background-color:#4a36fc ;
+  }
+  
+  .last{
+    position: relative;
+    top: 50px;
+  }
+  .logout{
+    position: relative;
+    top: 40px;
+    background-color: rgb(255, 63, 63);
+    text-align: center;
+    width: 100%;
+    padding: 9px 0px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 2px solid black;
+  }
+
+  #logout{
+    text-decoration: none;
+    color: white;
+    padding: 5px 170px;
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .logout:hover{
+    background-color:rgb(254, 3, 3) ;
+  }
